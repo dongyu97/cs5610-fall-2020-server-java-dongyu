@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+<a href="../index.html">
+    Home
+</a>
+    <h1>Profile</h1>
+    <div class="alert alert-success" role="alert">Profile successfully saved</div>
+    <div class="form-group row">
+        <label for="username" class="col-sm-12 col-md-2 col-form-label">Username</label>
+        <div class="col-sm-12 col-md-10">
+            <input id="username" value="alice" type="text" class="form-control" disabled/>
+        </div>
+    </div>
+
+<div class="form-group row">
+    <label for="inputpassword" class="col-sm-12 col-md-2 col-form-label">Password</label>
+        <div class="col-sm-12 col-md-10">
+    <input id="inputpassword" type="password"
+           class="form-control"/></div>
+</div>
+
+    <div class="form-group row">
+        <label for="inputEmail" class="col-sm-12 col-md-2 col-form-label">Email</label>
+        <div class="col-sm-12 col-md-10">
+        <input id="inputEmail"
+               title="Enter your email"
+               placeholder="alice@wonderland.com"
+               type="email"
+               class="form-control"/>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="inputDOB" class="col-sm-12 col-md-2 col-form-label">DOB</label>
+        <div class="col-sm-12 col-md-10">
+        <input id="inputDOB"
+               value="2005-11-21"
+               type="date"
+               class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="roleFld" class="col-sm-12 col-md-2 col-form-label">Role: </label>
+        <div class="col-sm-12 col-md-10">
+
+            <select id="roleFld" class="custom-select">
+                <option value="Faculty">Faculty</option>
+                <option value="Student">Student</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+
+    </div>
+    <button class="btn btn-success btn-block">Update</button>
+<a href="../index.html" class="btn btn-danger btn-block">
+    Log out
+</a>
+
+</div>
+</body>
+</html>
