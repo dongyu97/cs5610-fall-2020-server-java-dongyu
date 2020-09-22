@@ -1,0 +1,20 @@
+.wbdv-add-course {
+   color: #ff0e1d;
+}
+.wbdv-sticky-add-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.course-list-body {
+    margin-top: 3rem;
+}

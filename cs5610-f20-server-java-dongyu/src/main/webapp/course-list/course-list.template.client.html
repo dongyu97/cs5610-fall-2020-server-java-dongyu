@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="course-list.style.client.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary justify-content-between">
+        <span class="navbar-brand">
+            <i class="fa fa-align-justify wbdv-field wbdv-hamburger"></i>
+            <span class="d-none d-sm-none d-md-inline wbdv-label wbdv-course-manager">Course Manager</span>
+        </span>
+    <form class="form-inline">
+        <input class="form-control wbdv-field wbdv-new-course" type="search" placeholder="New Course Title" aria-label="Search">
+        <i class="fa fa-plus wbdv-button wbdv-add-course"></i>
+    </form>
+</nav>
+<i class="fa fa-plus pull-right fa-2x wbdv-button wbdv-add-course wbdv-sticky-add-button" aria-hidden="true"></i>
+<div class="container course-list-body">
+
+
+
+
+    <table class="table">
+        <thead >
+        <tr class="d-none d-sm-none d-md-table-row">
+            <th class="wbdv-header wbdv-title">Title</th>
+            <th class="wbdv-header wbdv-owner">Owned by</th>
+            <th class="wbdv-header wbdv-last-modified">Last modified by me</th>
+            <th class="pull-right"><i class="fa fa-th wbdv-button wbdv-grid-layout" aria-hidden="true"></i>
+            <i class="fa fa-list-ol wbdv-button wbdv-list-layout" style="display: none" aria-hidden="true"></i>
+                <i class="fa fa-sort-alpha-asc wbdv-header wbdv-sort" aria-hidden="true"></i>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 5610
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">7:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 4550
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">7:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+        <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+            <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                CS 5610
+            </a>
+        </td>
+        <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+        <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">6:30 pm</td>
+        <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                CS 5610
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">6:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 5610
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">6:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 5010
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Clark</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">6:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 5610
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">7:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 5610
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">6:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="wbdv-row wbdv-course">
+            <td><i class="fa fa-file-text-o wbdv-row wbdv-icon" aria-hidden="true"></i>
+                <a href="../course-editor/course-editor.template.client.html" class="wbdv-row wbdv-title">
+                    CS 5610
+                </a>
+            </td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-owner">Jose</td>
+            <td class="d-none d-sm-none d-md-table-cell wbdv-row wbdv-modified-date">6:30 pm</td>
+            <td><i class="fa fa-2x fa-trash-o pull-right wbdv-row wbdv-button wbdv-delete" aria-hidden="true"></i></td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+</body>
+</html>
