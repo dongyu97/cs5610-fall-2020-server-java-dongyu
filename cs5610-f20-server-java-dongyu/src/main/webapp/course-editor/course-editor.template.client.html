@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Editor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="course-editor.style.client.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+<nav class="navbar navbar-light bg-light row no-gutters">
+    <div class="navbar-brand col-4" style="margin-right:0" href="#">
+        <a href="../index.html" class="wbdv-course-editor wbdv-close">
+                <i class="fa fa-window-close-o fa-2x" aria-hidden="true"></i>
+            </a>
+            <h1 class="wbdv-course-title" style="display:inline">CS5610</h1>
+    </div>
+
+    <div class="col-8" id="navbarNav">
+        <ul class="nav nav-tabs wbdv-lesson-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Tags</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Attributes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Elements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Headings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">
+                <i class="fa fa-plus pull-right wbdv-lesson-add-btn"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>
+<div class="container-fluid">
+
+<!--    <div class="row">-->
+<!--        <div class="row col-4">-->
+<!--            <a href="../index.html" class="wbdv-course-editor wbdv-close">-->
+<!--                <i class="fa fa-window-close-o fa-3x" aria-hidden="true"></i>-->
+<!--            </a>-->
+
+<!--            <h1 class="wbdv-course-title">-->
+<!--                CS5610-->
+<!--            </h1>-->
+<!--        </div>-->
+<!--        <div class="col-8">-->
+<!--            <ul class="nav nav-tabs wbdv-lesson-tabs">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" href="#">Tags</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item"><a class="nav-link " href="#">Attributes</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link " href="#">Elements</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link " href="#">Headings</a></i></li>-->
+<!--                <li class="nav-item"><a class="nav-link " href="#">-->
+<!--                    <i class="fa fa-plus pull-right wbdv-lesson-add-btn"></i></a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--    <h1>-->
+    <!--        <a href="../index.html">-->
+    <!--            <i class="fa fa-window-close-o" aria-hidden="true"></i>-->
+    <!--        </a>-->
+    <!--        CS5610-->
+    <!--    </h1>-->
+    <div class="row">
+        <div class="col-4">
+
+            <ul class="list-group wbdv-module-list">
+                <li class="list-group-item wbdv-module-item"><span class="wbdv-module-item-title">Html</span>
+                    <i class="fa fa-times pull-right wbdv-module-item-delete-btn"></i></li>
+                <li class="list-group-item active wbdv-module-item">
+                    <span class="wbdv-module-item-title">CSS</span>
+                    <i class="fa fa-times pull-right wbdv-module-item-delete-btn"></i></li>
+                <li class="list-group-item wbdv-module-item">
+                    <span class="wbdv-module-item-title">JavaScript</span>
+                    <i class="fa fa-times pull-right wbdv-module-item-delete-btn"></i></li>
+                <li class="list-group-item wbdv-module-item">
+                    <span class="wbdv-module-item-title">React</span>
+                    <i class="fa fa-times pull-right wbdv-module-item-delete-btn"></i></li>
+                <li class="list-group-item"><i
+                        class="fa fa-plus pull-right wbdv-module-item-add-btn"></i></li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <div>
+
+                <!--                <ul class="list-group">-->
+                <!--                    <li class="list-group-item">Tags<i class="fa fa-times pull-right"></i></li>-->
+                <!--                    <li class="list-group-item">Attributes<i class="fa fa-times pull-right"></i></li>-->
+                <!--                    <li class="list-group-item active">Elements<i class="fa fa-times pull-right"></i></li>-->
+                <!--                    <li class="list-group-item">Headings<i class="fa fa-times pull-right"></i></li>-->
+                <!--                    <li class="list-group-item"><i class="fa fa-plus pull-right"></i></li>-->
+                <!--                </ul>-->
+                <!--                <ul class="nav nav-tabs">-->
+                <!--                    <li class="nav-item">-->
+                <!--                        <a class="nav-link active" href="#">Tags</a>-->
+                <!--                    </li>-->
+                <!--                    <li class="nav-item"><a class="nav-link " href="#">Attributes</a></li>-->
+                <!--                    <li class="nav-item"><a class="nav-link " href="#">Elements</a></li>-->
+                <!--                    <li class="nav-item"><a class="nav-link " href="#">Headings</a></i></li>-->
+                <!--                    <li class="nav-item"><a class="nav-link " href="#"><i class="fa fa-plus pull-right"></i></a></li>-->
+                <!--                </ul>-->
+
+
+            </div>
+            <br/>
+            <div>
+
+                <ul class="nav nav-pills wbdv-topic-pill-list">
+                    <li class="nav-item wbdv-topic-pill">
+                        <a class="nav-link active" href="#">Block</a>
+                    </li>
+                    <li class="nav-item wbdv-topic-pill"><a class="nav-link " href="#">Inline</a>
+                    </li>
+                    <li class="nav-item wbdv-topic-pill"><a class="nav-link " href="#">Topic 1</a>
+                    </li>
+                    <li class="nav-item wbdv-topic-pill"><a class="nav-link " href="#">Topic
+                        2</a></i></li>
+                    <li class="nav-item"><a class="nav-link " href="#"><i
+                            class="fa fa-plus pull-right wbdv-topic-add-btn"></i></a></li>
+                </ul>
+            </div>
+            <br/>
+            <div>
+                <h2>Widgets
+                    <div class="pull-right">
+                        <a class="btn btn-success">Save</a>
+                        Preview
+                        <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                    </div>
+                </h2>
+            </div>
+
+            <div class="card card-body container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h3>Heading Widgets
+                            <span class="pull-right row ">
+                        <a href="#" class="btn btn-warning col-2">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                        <a href="#" class="btn btn-warning col-2">
+                            <i class="fa fa-arrow-down"></i>
+                        </a>
+                        <select class="custom-select col-6">
+                            <option>Heading</option>
+                            <option>Youtube</option>
+                            <option>Slide</option>
+                        </select>
+                        <a href="#" class="btn btn-danger col-2">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card-body row">
+                    <input class="col-12" placeholder="Heading Widget"/>
+                </div>
+                <div class="card-body row">
+                    <select class="col-12 custom-select ">
+                        <option value="Heading 1">Heading 1</option>
+                        <option value="Heading 2">Heading 2</option>
+                        <option value="Heading 3">Heading 3</option>
+                    </select>
+                </div>
+                <div class="card-body row">
+                    <input class="col-12" placeholder="Widget Name"/>
+                </div>
+                <h4 class="card-body row">Preview</h4>
+                <h2 class="card-body row">Heading Widget</h2>
+
+            </div>
+            <i class="fa fa-plus-circle btn btn-danger pull-right" aria-hidden="true"></i>
+        </div>
+
+    </div>
+    <div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
