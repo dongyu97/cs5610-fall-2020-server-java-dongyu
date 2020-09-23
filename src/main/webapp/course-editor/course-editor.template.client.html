@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Course Editor</title>
@@ -156,9 +156,10 @@
                             <i class="fa fa-arrow-down"></i>
                         </a>
                         <select class="custom-select col-6">
-                            <option>Heading</option>
-                            <option>Youtube</option>
-                            <option>Slide</option>
+                            <option value="heading widget" selected>heading</option>
+                            <option value="paragraph widget">paragraph</option>
+                            <option value="list widget">list</option>
+                            <option value="image widget">image</option>
                         </select>
                         <a href="#" class="btn btn-danger col-2">
                             <i class="fa fa-trash"></i>
@@ -168,20 +169,20 @@
                     </div>
                 </div>
                 <div class="card-body row">
-                    <input class="col-12" placeholder="Heading Widget"/>
+                    <input class="col-12" placeholder="Heading text"/>
                 </div>
                 <div class="card-body row">
                     <select class="col-12 custom-select ">
-                        <option value="Heading 1">Heading 1</option>
+                        <option value="Heading 1" selected>Heading 1</option>
                         <option value="Heading 2">Heading 2</option>
                         <option value="Heading 3">Heading 3</option>
                     </select>
                 </div>
                 <div class="card-body row">
-                    <input class="col-12" placeholder="Widget Name"/>
+                    <textarea class="col-12 " placeholder="Paragraph: A course is made up of many content or learning modules. This section describes how the application supports adding modules to a course. Selecting a course navigates to a course's CourseEditor webpage. The CourseEditor displays as a horizontal split showing a list of modules to the left, and lessons and topics to the right. Selecting a course shows the list of modules that make up that course."></textarea>
                 </div>
                 <h4 class="card-body row">Preview</h4>
-                <h2 class="card-body row">Heading Widget</h2>
+                <h2 class="card-body row">Heading text</h2>
 
             </div>
             <i class="fa fa-plus-circle btn btn-danger pull-right" aria-hidden="true"></i>
