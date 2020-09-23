@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="profile.style.client.css" rel="stylesheet">
 
 </head>
 <body>
@@ -12,19 +15,24 @@
     Home
 </a>
     <h1>Profile</h1>
-    <div class="alert alert-success" role="alert">Profile successfully saved</div>
+    <div class="alert alert-success wbdv-message" role="alert">Profile successfully saved</div>
     <div class="form-group row">
         <label for="username" class="col-sm-12 col-md-2 col-form-label">Username</label>
         <div class="col-sm-12 col-md-10">
-            <input id="username" value="alice" type="text" class="form-control" disabled/>
+            <input id="username" value="alice" type="text" class="form-control wbdv-field wbdv-username" disabled/>
         </div>
     </div>
-
-<div class="form-group row">
-    <label for="inputpassword" class="col-sm-12 col-md-2 col-form-label">Password</label>
+    <div class="form-group row">
+        <label for="inputpassword" class="col-sm-12 col-md-2 col-form-label">Password</label>
         <div class="col-sm-12 col-md-10">
-    <input id="inputpassword" type="password"
-           class="form-control"/></div>
+            <input id="inputpassword" type="password"  value="123456"
+                   class="form-control wbdv-field wbdv-password"/></div>
+    </div>
+<div class="form-group row">
+    <label for="inputphone" class="col-sm-12 col-md-2 col-form-label">Phone</label>
+        <div class="col-sm-12 col-md-10">
+    <input id="inputphone" type="text" placeholder="(123)-456-7890"
+           class="form-control wbdv-field wbdv-phone"/></div>
 </div>
 
     <div class="form-group row">
@@ -34,7 +42,7 @@
                title="Enter your email"
                placeholder="alice@wonderland.com"
                type="email"
-               class="form-control"/>
+               class="form-control wbdv-field wbdv-email"/>
         </div>
     </div>
 
@@ -42,16 +50,16 @@
         <label for="inputDOB" class="col-sm-12 col-md-2 col-form-label">DOB</label>
         <div class="col-sm-12 col-md-10">
         <input id="inputDOB"
-               value="2005-11-21"
+               placeholder="mm-dd-yyyy"
                type="date"
-               class="form-control"/>
+               class="form-control wbdv-field wbdv-dob"/>
         </div>
     </div>
     <div class="form-group row">
         <label for="roleFld" class="col-sm-12 col-md-2 col-form-label">Role: </label>
         <div class="col-sm-12 col-md-10">
 
-            <select id="roleFld" class="custom-select">
+            <select id="roleFld" class="custom-select wbdv-field wbdv-role">
                 <option value="Faculty">Faculty</option>
                 <option value="Student">Student</option>
                 <option value="Admin">Admin</option>
@@ -59,10 +67,22 @@
         </div>
 
     </div>
-    <button class="btn btn-success btn-block">Update</button>
-<a href="../index.html" class="btn btn-danger btn-block">
-    Log out
-</a>
+
+
+    <div class="form-group row">
+        <label  class="col-sm-12 col-md-2 col-form-label"></label>
+        <div class="col-sm-12 col-md-10">
+            <button class="btn btn-success btn-block wbdv-button wbdv-update">Update</button>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label  class="col-sm-12 col-md-2 col-form-label"></label>
+        <div class="col-sm-12 col-md-10">
+            <a href="../index.html" class="btn btn-danger btn-block wbdv-button wbdv-logout">
+                Log out
+            </a>
+        </div>
+    </div>
 
 </div>
 </body>
